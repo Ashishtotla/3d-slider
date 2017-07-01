@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>3d slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-1" style="background-color: black;"></div>
+      <div class="slide-2" style="background-color: rgba(23,45,5,1);"></div>
+      <div class="slide-3" style="background-color: rgba(234,45,54,1);"></div>
+      <div class="slide-4"style="background-color: rgba(5,235,2,1);"></div>
+      <div class="slide-5" style="background-color: rgba(35,3,2,1);"></div>
+    </div>
+
+    <script type="text/javascript">
+      var slide1 = document.querySelector(".slide-1");
+      var slide2 = document.querySelector(".slide-2");
+      var slide3 = document.querySelector(".slide-3");
+      var slide4 = document.querySelector(".slide-4");
+      var slide5 = document.querySelector(".slide-5");
+      console.log(slide1);
+      slide1.addEventListener("click",fun1);
+      function fun1(){
+        console.log("asdf");
+        slide1.className='';
+        slide2.className='';
+        slide3.className='';
+        slide4.className='';
+        slide5.className='';
+        slide1.classList.add("slide-3");
+        slide2.classList.add("slide-4");
+        slide3.classList.add("slide-5");
+        slide4.classList.add("slide-1");
+        slide5.classList.add("slide-2");
+      }
+      slide2.addEventListener("click",fun2);
+      function fun2(){
+        console.log("asdf");
+        slide1.className='';
+        slide2.className='';
+        slide3.className='';
+        slide4.className='';
+        slide5.className='';
+        slide1.classList.add("slide-2");
+        slide2.classList.add("slide-3");
+        slide3.classList.add("slide-4");
+        slide4.classList.add("slide-5");
+        slide5.classList.add("slide-1");
+      }
+      slide3.addEventListener("click",fun3);
+      function fun3(){
+        console.log("asdf");
+        slide1.className='';
+        slide2.className='';
+        slide3.className='';
+        slide4.className='';
+        slide5.className='';
+        slide1.classList.add("slide-1");
+        slide2.classList.add("slide-2");
+        slide3.classList.add("slide-3");
+        slide4.classList.add("slide-4");
+        slide5.classList.add("slide-5");
+      }
+      slide4.addEventListener("click",fun4);
+      function fun4(){
+        console.log("asdf");
+        slide1.className='';
+        slide2.className='';
+        slide3.className='';
+        slide4.className='';
+        slide5.className='';
+        slide1.classList.add("slide-5");
+        slide2.classList.add("slide-1");
+        slide3.classList.add("slide-2");
+        slide4.classList.add("slide-3");
+        slide5.classList.add("slide-4");
+      }
+      slide5.addEventListener("click",fun5);
+      function fun5(){
+        console.log("asdf");
+        slide1.className='';
+        slide2.className='';
+        slide3.className='';
+        slide4.className='';
+        slide5.className='';
+        slide1.classList.add("slide-4");
+        slide2.classList.add("slide-5");
+        slide3.classList.add("slide-1");
+        slide4.classList.add("slide-2");
+        slide5.classList.add("slide-3");
+      }
+
+
+    </script>
+
+  </body>
+</html>
